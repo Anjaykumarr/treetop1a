@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Edu+SA+Beginner:wght@500&family=Mochiy+Pop+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-weight: 500;
+}
+
+.navbar
+{
+    background-color: rgb(202, 245, 202);
+}
+
+.row
+{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-toggler
+{
+    margin: 0;
+    padding: 0;
+    color: rgb(47, 255, 0);
+}
+
+.nav-item:hover
+{
+    font-size: large;
+    font-weight: 700;
+}
+
+a.nav-link
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar-toggler-icon
+{
+    color: black;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 3.5rem;
+}
+
+.home
+{
+    padding: 86px 71px;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home h1,p
+{
+    color: white;
+}
+
+.video-slide
+{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 109vh;
+    object-fit: cover;
+
+
+}
+
+
+/* .carousel-inner.h5
+{
+    color: green;
+}  */
+
+
+/* preloader animation */
+
+.letters
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 44vh;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.one
+{
+    color: rgb(0, 100, 38);
+    animation: animate1 4s linear infinite;
+   
+    background: transparent;
+}
+
+.two
+{
+    color:rgb(0, 100, 38);
+    animation: animate4 4s backwards infinite;
+ 
+    background: transparent;
+
+}
+.three
+{
+    color: rgb(0, 100, 38);
+    animation: animate3 4s both infinite;
+   
+    background: transparent;
+
+}
+.four
+{
+    color: rgb(0, 100, 38);
+    animation: animate4 4s forwards infinite;
+   
+    background: transparent;
+
+}
+.five
+{
+    color: rgb(9, 31, 228);
+    animation: animate5 4s normal infinite;
+    
+    background: transparent;
+
+}
+
+.six
+{
+    color: rgb(9, 31, 228);
+    animation: animate3 4s normal infinite;
+  
+    background: transparent;
+
+}
+
+.seven
+{
+    color: rgb(9, 31, 228);
+    animation: animate7 4s linear infinite;
+   
+    background: transparent;
+
+}
+
+@keyframes animate1
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    50%
+    {
+        transform-origin: 20vh;
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate7
+{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    50%
+    {
+        transform-origin: 20vh;
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    50%
+    {
+        transform-origin: 20vh;
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes animate3
+{
+    0%
+    {
+        transform: rotate(90deg);
+    }
+    50%
+    {
+        transform-origin: 10vh;
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate4
+{
+    0%
+    {
+        transform: rotate(180deg);
+    }
+    50%
+    {
+        transform-origin: 20vh;
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate5
+{
+    0%
+    {
+        transform: rotate(270deg);
+    }
+    50%
+    {
+        transform-origin: 20vh;
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}

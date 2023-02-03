@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Home</title>
+    <link rel="icon" href="logo.png" type="image/gif/png" />
+
+</head>
+<body>
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" id="header">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><span class="text-success">Tree</span>Top</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">. . .</span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html"
+                  ><span class="text-success">Home</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"
+                  ><span class="text-success">About</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <img src="sun.png" alt="" id="sun">
+        <img src="forest_background.jpg" alt="" id="forest_back">
+        <h2 id="text">Tree<span class="top">Top</span></h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="forest_front.jpg" alt="" id="forest_front">
+      </section>
+      <div class="sec" id="sec">
+        <h2>content down hers</h2>
+        <>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur impedit deserunt sequi? Veritatis, qui quis odit doloribus illum error expedita id cupiditate inventore sed molestias vero necessitatibus? Officia officiis molestias recusandae accusamus. Rerum consequatur accusamus totam natus sunt ipsam dignissimos, vitae porro similique, animi esse possimus alias reprehenderit repellendus. Dolore?<br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, corporis iusto eaque deserunt cum similique odio repellat facilis optio minima perspiciatis quas laborum, earum asperiores libero alias ratione dolorem! In fugiat rerum suscipit rem eaque deleniti aspernatur error delectus corporis sequi voluptatem consequatur, animi at alias inventore, facilis quia quo. Doloremque deleniti esse quibusdam eum porro quos, necessitatibus quo quam placeat libero. Officia omnis voluptas, dicta neque ut inventore <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur impedit deserunt sequi? Veritatis, qui quis odit doloribus illum error expedita id cupiditate inventore sed molestias vero necessitatibus? Officia officiis molestias recusandae accusamus. Rerum consequatur accusamus totam natus sunt ipsam dignissimos, vitae porro similique, animi esse possimus alias reprehenderit repellendus. Dolore?<br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, corporis iusto eaque deserunt cum similique odio repellat facilis optio minima perspiciatis quas laborum, earum asperiores libero alias ratione dolorem! In fugiat rerum suscipit rem eaque deleniti aspernatur error delectus corporis sequi voluptatem consequatur, animi at alias inventore, facilis quia quo. Doloremque deleniti esse quibusdam eum porro quos, necessitatibus quo quam placeat libero. Officia omnis voluptas, dicta neque ut inventore <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur impedit deserunt sequi? Veritatis, qui quis odit doloribus illum error expedita id cupiditate inventore sed molestias vero necessitatibus? Officia officiis molestias recusandae accusamus. Rerum consequatur accusamus totam natus sunt ipsam dignissimos, vitae porro similique, animi esse possimus alias reprehenderit repellendus. Dolore?<br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, corporis iusto eaque deserunt cum similique odio repellat facilis optio minima perspiciatis quas laborum, earum asperiores libero alias ratione dolorem! In fugiat rerum suscipit rem eaque deleniti aspernatur error delectus corporis sequi voluptatem consequatur, animi at alias inventore, facilis quia quo. Doloremque deleniti esse quibusdam eum porro quos, necessitatibus quo quam placeat libero. Officia omnis voluptas, dicta neque ut inventore ex.</p>
+      </div>
+
+      <script>
+        let sun = document.getElementById('sun');
+        let forest_back = document.getElementById('forest_back');
+        let text = document.getElementById('text'); 
+        let btn = document.getElementById('btn');
+        let forest_front = document.getElementById('forest_front');      
+        let nav = document.querySelector('nav');       
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            // sun.style.stars.left = value *0.25 + 'px';
+            sun.style.top = value *1.05 + 'px';
+            forest_back.style.top = value * 0.5 + 'px';
+            forest_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 4 + 'px';
+            nav.style.top = value * 0.5 + 'px';
+
+
+
+
+
+        })
+      </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    </script>
+</body>
+</html>
